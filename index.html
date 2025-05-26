@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salud para Ti, Vida para Tu Bebé | Campaña de Prevención de Muerte Materna en Huancavelica</title>
+    <meta name="description" content="Campaña integral en Huancavelica para prevenir la mortalidad materna. Infórmate sobre factores de riesgo, signos de alarma, consejos clave y recursos de apoyo para un embarazo y parto seguros. ¡Tu salud y la de tu bebé son nuestra prioridad!">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        /* Estilos personalizados para la fuente Inter, sobrescribiendo la fuente predeterminada de Tailwind */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Comportamiento de desplazamiento suave para anclas (scroll-spy) */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Estilos para las tarjetas de trimestre, usando @apply para aplicar clases de Tailwind */
+        .trimester-card {
+            @apply bg-white p-6 rounded-xl shadow-md border-t-4;
+        }
+        /* Colores de borde específicos para cada trimestre (ahora más vibrantes) */
+        .trimester-card.first { border-color: #fce7f3; } /* pink-100 */
+        .trimester-card.second { border-color: #fbcfe8; } /* pink-200 */
+        .trimester-card.third { border-color: #f7a8d5; } /* pink-300 */
+        .trimester-card.delivery { border-color: #f472b6; } /* pink-400 */
+
+
+        .trimester-card h3 {
+            @apply text-xl font-bold mb-3;
+        }
+        /* Estilo para los iconos de signos de alarma (cuando se usan imágenes) */
+        .alarm-icon {
+            @apply w-8 h-8 flex-shrink-0 mr-3;
+        }
+    </style>
+</head>
+<body class="bg-fuchsia-50 text-gray-800 leading-relaxed antialiased">
+    <header class="bg-fuchsia-700 text-white py-12 text-center shadow-lg rounded-b-xl">
+        <div class="container mx-auto px-4">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-3">Salud para Ti, Vida para Tu Bebé</h1>
+            <p class="text-xl md:text-2xl opacity-95">Campaña para prevenir la muerte materna en Huancavelica</p>
+        </div>
+    </header>
+
+    <nav class="bg-fuchsia-600 py-3 text-center shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex flex-wrap justify-center gap-x-8 gap-y-2">
+            <a href="#importancia" class="text-white font-semibold hover:text-fuchsia-100 transition duration-300 transform hover:-translate-y-1 px-3 py-1 rounded-md">Importancia</a>
+            <a href="#factores" class="text-white font-semibold hover:text-fuchsia-100 transition duration-300 transform hover:-translate-y-1 px-3 py-1 rounded-md">Factores de Riesgo</a>
+            <a href="#signos" class="text-white font-semibold hover:text-fuchsia-100 transition duration-300 transform hover:-translate-y-1 px-3 py-1 rounded-md">Signos de Alarma</a>
+            <a href="#consejos" class="text-white font-semibold hover:text-fuchsia-100 transition duration-300 transform hover:-translate-y-1 px-3 py-1 rounded-md">Consejos Clave</a>
+            <a href="#historias" class="text-white font-semibold hover:text-fuchsia-100 transition duration-300 transform hover:-translate-y-1 px-3 py-1 rounded-md">Historias Reales</a>
+            <a href="#contacto" class="text-white font-semibold hover:text-fuchsia-100 transition duration-300 transform hover:-translate-y-1 px-3 py-1 rounded-md">Contacto y Ayuda</a>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-10 grid gap-10">
+        <section id="importancia" aria-labelledby="importancia-titulo" class="bg-white p-8 rounded-xl shadow-lg">
+            <h2 id="importancia-titulo" class="text-3xl font-bold text-fuchsia-700 mb-6 pb-3 border-b-2 border-fuchsia-400">¿Por qué es importante? Un compromiso con la vida</h2>
+            <div class="text-center mb-6">
+                <img src="https://placehold.co/800x400/F472B6/FFFFFF?text=Madre+e+Hijo+Felices" alt="Madre e hijo felices, símbolo de vida y esperanza" class="max-w-full h-auto rounded-lg shadow-md mx-auto">
+            </div>
+            <p class="text-lg mb-4">En Huancavelica, cada vida importa. La mortalidad materna, aunque ha disminuido, sigue siendo un desafío, especialmente para nuestras hermanas en las comunidades rurales. Esto no es solo una cifra; es el impacto en familias, comunidades y el futuro de nuestra región.</p>
+            <p class="text-lg mb-4">Según los datos recientes, en 2022 se registraron 4 muertes maternas (razón &asymp;72.3 por 100,000 nacidos vivos) y en 2023 también 4 muertes (razón &asymp;64.3). ¡Es alentador saber que en 2024 solo hubo 2 muertes maternas (ambas indirectas)! Sin embargo, persisten retos importantes.</p>
+            <p class="text-lg mb-4">El embarazo adolescente es frecuente en Huancavelica. La ENDES 2020 reporta que 1 de cada 10 adolescentes (15-19 años) está gestando o es madre. En 2023, la DIRESA atendió 4,624 gestantes, de las cuales 573 (12.4%) eran adolescentes, lo que incrementa los riesgos de complicaciones.</p>
+            <p class="text-lg mb-4">A pesar de que más del 85% de los partos se atienden en establecimientos de salud (enlazados con MINSA), aún existen brechas en el acceso a la salud en zonas rurales, especialmente por falta de transporte y facilidades, lo que lleva a una cobertura incompleta de controles prenatales.</p>
+            <p class="text-lg mb-4">Las principales causas de estas pérdidas, como las hemorragias severas y la preeclampsia (presión alta durante el embarazo), son en gran medida prevenibles. La clave está en la información, el acceso a servicios de salud de calidad y, sobre todo, en la acción temprana.</p>
+            <p class="text-lg">Esta campaña es un llamado a la acción para todas las mujeres embarazadas, sus familias y la comunidad. Al tomar conciencia y acudir a los controles prenatales, podemos asegurar un embarazo y parto seguros, garantizando que cada bebé nazca sano y cada madre regrese a casa para cuidar y amar a su familia. ¡Juntos, podemos construir un futuro más saludable para Huancavelica!</p>
+        </section>
+
+        ---
+
+        <section id="factores" aria-labelledby="factores-titulo" class="bg-white p-8 rounded-xl shadow-lg">
+            <h2 id="factores-titulo" class="text-3xl font-bold text-fuchsia-700 mb-6 pb-3 border-b-2 border-fuchsia-400">Conoce los Factores de Riesgo en Cada Etapa de tu Embarazo</h2>
+            <p class="text-lg mb-8">Estar informada es tu mejor herramienta. Aquí te explicamos los riesgos más comunes en cada trimestre y cómo puedes cuidarte.</p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
+                <div class="trimester-card first">
+                    <div class="text-center mb-4">
+                        <img src="https://placehold.co/400x200/F472B6/FFFFFF?text=Primer+Trimestre" alt="Embarazo Primer Trimestre" class="max-w-full h-auto rounded-lg shadow-sm mx-auto">
+                    </div>
+                    <h3 class="text-fuchsia-700"><i class="fas fa-baby text-fuchsia-700 mr-2"></i> Primer Trimestre (Semanas 1-12)</h3>
+                    <p class="text-gray-700 mb-3">Esta es la etapa de formación. Los riesgos incluyen:</p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700">
+                        <li>Embarazo ectópico: Cuando el óvulo se implanta fuera del útero.</li>
+                        <li>Aborto espontáneo: Pérdida del embarazo antes de la semana 20.</li>
+                        <li>Infecciones: Especialmente las que pueden afectar el desarrollo del bebé.</li>
+                    </ul>
+                    <p class="mt-4 text-sm text-gray-600">✨ **Consejo:** Inicia tus controles prenatales lo antes posible. Tu salud y la de tu bebé son lo primero.</p>
+                </div>
+
+                <div class="trimester-card second">
+                    <div class="text-center mb-4">
+                        <img src="https://placehold.co/400x200/F7A8D5/FFFFFF?text=Segundo+Trimestre" alt="Embarazo Segundo Trimestre" class="max-w-full h-auto rounded-lg shadow-sm mx-auto">
+                    </div>
+                    <h3 class="text-fuchsia-700"><i class="fas fa-child text-fuchsia-700 mr-2"></i> Segundo Trimestre (Semanas 13-27)</h3>
+                    <p class="text-gray-700 mb-3">Tu bebé crece rápidamente. Presta atención a:</p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700">
+                        <li>Preeclampsia temprana: Presión alta y daño a órganos.</li>
+                        <li>Diabetes gestacional: Azúcar alta en la sangre durante el embarazo.</li>
+                        <li>Aborto tardío: Pérdida del embarazo entre las semanas 20 y 27.</li>
+                    </ul>
+                    <p class="mt-4 text-sm text-gray-600">✨ Consejo: Sigue tus controles. Es clave detectar a tiempo cualquier cambio en tu presión o niveles de azúcar.</p>
+                </div>
+
+                <div class="trimester-card third">
+                    <div class="text-center mb-4">
+                        <img src="https://placehold.co/400x200/FBCFE8/000000?text=Tercer+Trimestre" alt="Embarazo Tercer Trimestre" class="max-w-full h-auto rounded-lg shadow-sm mx-auto">
+                    </div>
+                    <h3 class="text-fuchsia-700"><i class="fas fa-walking text-fuchsia-700 mr-2"></i> Tercer Trimestre (Semanas 28-40+)</h3>
+                    <p class="text-gray-700 mb-3">La recta final. Los riesgos principales son:</p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700">
+                        <li>Hemorragias: Por placenta previa o desprendimiento.</li>
+                        <li>Preeclampsia/Eclampsia: Complicaciones graves de la presión alta.</li>
+                        <li>Parto prematuro: Antes de la semana 37.</li>
+                    </ul>
+                    <p class="mt-4 text-sm text-gray-600">✨ Consejo: Prepara tu plan de parto y conoce los signos de alarma. ¡No dudes en ir al centro de salud!</p>
+                </div>
+
+                <div class="trimester-card delivery">
+                    <div class="text-center mb-4">
+                        <img src="https://placehold.co/400x200/FCE7F3/000000?text=Parto+y+Postparto" alt="Parto y Postparto" class="max-w-full h-auto rounded-lg shadow-sm mx-auto">
+                    </div>
+                    <h3 class="text-fuchsia-700"><i class="fas fa-hospital-user text-fuchsia-700 mr-2"></i> Durante el Parto y Postparto</h3>
+                    <p class="text-gray-700 mb-3">El momento clave y la recuperación. Atención a:</p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700">
+                        <li>Hemorragia postparto: Sangrado excesivo después del parto.</li>
+                        <li>Infecciones: En el útero o la herida quirúrgica.</li>
+                        <li>Complicaciones de la anestesia: Poco frecuentes, pero importantes.</li>
+                    </ul>
+                    <p class="mt-4 text-sm text-gray-600">✨ Consejo: Asegúrate de tener atención profesional durante y después del parto. ¡Tu recuperación es tan importante como el nacimiento!</p>
+                </div>
+            </div>
+        </section>
+
+        ---
+
+        <section id="signos" aria-labelledby="signos-titulo" class="bg-white p-8 rounded-xl shadow-lg">
+            <h2 id="signos-titulo" class="text-3xl font-bold text-fuchsia-700 mb-6 pb-3 border-b-2 border-fuchsia-400">¡Atenta! Signos de Alarma que Requieren Atención Inmediata</h2>
+            <p class="text-lg mb-6">Si experimentas alguno de estos síntomas, no esperes. ¡Tu vida y la de tu bebé dependen de una acción rápida!</p>
+            <div class="bg-fuchsia-100 p-6 border-l-4 border-fuchsia-500 rounded-lg mb-6">
+                <ul class="space-y-4 text-lg font-semibold text-fuchsia-800">
+                    <li class="flex items-center">
+                        <span class="text-3xl mr-3" role="img" aria-label="Gota de sangre">🩸</span> <b>Sangrado vaginal abundante</b> – Podría ser una hemorragia peligrosa.
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-3xl mr-3" role="img" aria-label="Explosión">💥</span> <b>Dolor abdominal intenso</b> – Puede ser señal de desprendimiento de placenta.
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-3xl mr-3" role="img" aria-label="Termómetro">🌡️</span> <b>Fiebre alta</b> – Podría indicar infección grave.
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-3xl mr-3" role="img" aria-label="Nube de aire">🌬️</span> <b>Dificultad para respirar</b> – Posible complicación cardiovascular o pulmonar.
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-3xl mr-3" role="img" aria-label="Cara mareada">😵‍💫</span> <b>Convulsiones o desmayos</b> – Urgencia médica inmediata.
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-3xl mr-3" role="img" aria-label="Ojo">👁️</span> <b>Visión borrosa o ver "lucecitas"</b> – Podría ser un signo de preeclampsia.
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-3xl mr-3" role="img" aria-label="Gota de agua">💧</span> <b>Pérdida de líquido por la vagina</b> – Podría indicar ruptura de membranas.
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-3xl mr-3" role="img" aria-label="Flor">🌸</span> <b>Flujos vaginales abundantes, con mal olor o color inusual</b> – Posible infección.
+                    </li>
+                </ul>
+            </div>
+            <div class="text-center">
+                <img src="https://placehold.co/800x400/F472B6/FFFFFF?text=Actúa+Rápido:+Señales+de+Alarma" alt="Ilustración de señales de alarma para embarazadas" class="max-w-full h-auto rounded-lg shadow-md mx-auto">
+            </div>
+        </section>
+
+        ---
+
+        <section id="consejos" aria-labelledby="consejos-titulo" class="bg-white p-8 rounded-xl shadow-lg">
+            <h2 id="consejos-titulo" class="text-3xl font-bold text-fuchsia-700 mb-6 pb-3 border-b-2 border-fuchsia-400">Consejos Clave para tu Salud y la de tu Bebé</h2>
+            <ul class="space-y-4 text-lg">
+                <li class="flex items-center"><i class="fas fa-calendar-check text-green-600 mr-3 text-xl"></i> Haz al menos <strong class="text-fuchsia-700">6 controles prenatales</strong> durante tu embarazo.</li>
+                <li class="flex items-center"><i class="fas fa-ambulance text-red-600 mr-3 text-xl"></i> Acude inmediatamente al centro de salud si presentas <strong class="text-fuchsia-700">señales de alarma</strong>.</li>
+                <li class="flex items-center"><i class="fas fa-language text-blue-600 mr-3 text-xl"></i> Consulta en tu idioma (español o quechua), ¡los servicios son <strong class="text-fuchsia-700">gratuitos</strong>!</li>
+                <li class="flex items-center"><i class="fas fa-apple-alt text-pink-600 mr-3 text-xl"></i> Aliméntate bien: incluye hierro, ácido fólico y alimentos ricos en nutrientes.</li>
+                <li class="flex items-center"><i class="fas fa-hospital text-fuchsia-600 mr-3 text-xl"></i> Planea tu parto en un lugar seguro con profesionales capacitados.</li>
+                <li class="flex items-center"><i class="fas fa-hand-holding-heart text-rose-600 mr-3 text-xl"></i> Tu familia y comunidad son tu apoyo, ¡habla con ellos!</li>
+            </ul>
+        </section>
+
+        ---
+
+        <section id="historias" aria-labelledby="historias-titulo" class="bg-white p-8 rounded-xl shadow-lg">
+            <h2 id="historias-titulo" class="text-3xl font-bold text-fuchsia-700 mb-6 pb-3 border-b-2 border-fuchsia-400">Historias de Esperanza: La Prevención Salva Vidas</h2>
+            <div class="space-y-6">
+                <p class="text-gray-700 p-4 bg-gray-50 rounded-lg border-l-4 border-fuchsia-400 italic">
+                    "Gracias al centro de salud y los controles prenatales, tuve un parto seguro y mi bebé nació sano. Me sentí escuchada y respetada en todo momento." <br> – <cite class="block mt-2 font-semibold text-fuchsia-600">Juana, Churcampa</cite>
+                </p>
+                <p class="text-gray-700 p-4 bg-gray-50 rounded-lg border-l-4 border-fuchsia-400 italic">
+                    "Las parteras me animaron a ir al centro de salud, ¡gracias a ellas y las obstetras estoy aquí! Mi familia está completa y feliz." <br> – <cite class="block mt-2 font-semibold text-fuchsia-600">Rosa, Yauli</cite>
+                </p>
+                <p class="text-gray-700 p-4 bg-gray-50 rounded-lg border-l-4 border-fuchsia-400 italic">
+                    "Al principio no sabía qué hacer, pero los consejos sobre los signos de alarma me salvaron. Llegué a tiempo al hospital y ahora mi bebé y yo estamos bien." <br> – <cite class="block mt-2 font-semibold text-fuchsia-600">María, Acobamba</cite>
+                </p>
+                <p class="text-gray-700 p-4 bg-gray-50 rounded-lg border-l-4 border-fuchsia-400 italic">
+                    "La atención en mi idioma quechua hizo toda la diferencia. Me sentí cómoda y entendí todo lo necesario para cuidar mi embarazo." <br> – <cite class="block mt-2 font-semibold text-fuchsia-600">Elena, Lircay</cite>
+                </p>
+            </div>
+            <div class="text-center mt-8">
+                <img src="https://placehold.co/800x400/F472B6/FFFFFF?text=Madres+Felices+y+Seguras" alt="Madres felices y seguras gracias a la prevención" class="max-w-full h-auto rounded-lg shadow-md mx-auto">
+            </div>
+        </section>
+
+        ---
+
+        <section id="contacto" aria-labelledby="contacto-titulo" class="bg-white p-8 rounded-xl shadow-lg">
+            <h2 id="contacto-titulo" class="text-3xl font-bold text-fuchsia-700 mb-6 pb-3 border-b-2 border-fuchsia-400">Contacto y Ayuda</h2>
+            <p class="text-lg mb-6">No estás sola. Aquí tienes los contactos clave para recibir orientación y asistencia de inmediato.</p>
+            <div class="space-y-4 text-lg">
+                <p><i class="fas fa-map-marker-alt text-fuchsia-700 mr-3"></i> <strong class="text-fuchsia-800">Centro de Salud Regional Huancavelica</strong></p>
+                <p><i class="fas fa-phone-alt text-fuchsia-700 mr-3"></i> <strong class="text-fuchsia-800">Teléfono Urgencias Obstétricas:</strong> <b class="text-2xl font-bold text-fuchsia-700">936 580 729</b></p>
+                <p><i class="fab fa-facebook text-blue-600 mr-3"></i> <strong class="text-blue-700">Síguenos en Facebook:</strong> <a href="https://www.facebook.com/DIRESAHuancavelica" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">DIRESA Huancavelica</a></p>
+                <p><i class="fab fa-whatsapp text-emerald-600 mr-3"></i> <strong class="text-emerald-700">WhatsApp Emergencias:</strong> <a href="https://wa.me/51936580729" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">+51 936 580 729</a></p>
+            </div>
+            <div class="text-center mt-8">
+                <a class="inline-block bg-emerald-600 text-white font-bold py-4 px-8 rounded-lg shadow-xl hover:bg-emerald-700 transition duration-300 transform hover:-translate-y-1 text-xl" href="https://wa.me/51936580729" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp mr-3"></i> ¡Contáctanos por WhatsApp Ahora!
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-fuchsia-700 text-white text-center py-6 mt-12 rounded-t-xl shadow-inner">
+        <p class="text-sm opacity-90">&copy; 2025 Campaña Salud Materna Huancavelica | Un proyecto de <strong class="font-semibold">Estudiantes de Obstetricia</strong></p>
+        <p class="text-xs opacity-80 mt-1">Con el apoyo de la DIRESA Huancavelica.</p>
+    </footer>
+</body>
+</html>
